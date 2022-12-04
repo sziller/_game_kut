@@ -1,29 +1,34 @@
-# README #
+= Board game
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Digital remake of an old-school board game. The original game was issued in Hungary and was in Hungarian.
+With help of some enthusiasts we might recreate even reimagine an age-old classic.
 
-### What is this repository for? ###
+== Installation
+All installation needs to be done with pip3!
+Any Directory you import data from needs to include an __init__.py file, in order to be accessible when started over the
+OS.
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+== Goals
+This is by default a turn based merchant strategy game for a number of players btw. 2 - 6.
+All rulez will first be implemented, as shown in the original manual.
+With no clear goals - other than having fun - we might reach some of the following milestones during development.
 
-### How do I get set up? ###
+- adding graphics
+- hotseat multiplayer style
+- parallel multiplayer style
+- multi-computer playing mode (LAN)
+- browser based playing style
+- game rebalancing
+- additional game features
+- multi language support
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+=== Contribution
+Any help is welcome. In some areas it is of advantage if you know, or even have a copy of the original game.
+However most of the rule and gamesetup related issues are either already implemented or easy to communicate.
 
-### Contribution guidelines ###
+=== Packages
+I'll try to keep this repo as simple as possible, with no external deps, as long as possible.
 
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+== Run
+We'll simply have a desktop icon for basic testruns.
+Once development reaches multiplayer level, we'll probably convert it into a browser game.
