@@ -22,13 +22,16 @@ With no clear goals - other than having fun - we might reach some of the followi
 - additional game features
 - multi language support
 
-=== Contribution
+== Contribution
 Any help is welcome. In some areas it is of advantage if you know, or even have a copy of the original game.
 However most of the rule and gamesetup related issues are either already implemented or easy to communicate.
 
-=== Packages
+== Packages
 I'll try to keep this repo as simple as possible, with no external deps, as long as possible.
 
 == Run
 We'll simply have a desktop icon for basic testruns.
 Once development reaches multiplayer level, we'll probably convert it into a browser game.
+
+== Owner
+Sziller
