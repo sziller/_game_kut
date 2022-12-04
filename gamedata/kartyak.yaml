@@ -1,0 +1,266 @@
+- act: tx
+  cond: false
+  cp: bank
+  Nr: 1
+  txt: KuLondon biztositast kell kotnie. Fizessen ezert 100_-ot.
+  value: -100
+- act: tx
+  cond: true
+  cp: bank
+  Nr: 2
+  txt: Ha van arubiztositasa, a biztosito 200_ visszateritest fizet.
+  value: 200
+- act: tx
+  cond: false
+  cp: bank
+  Nr: 3
+  txt: Eladta a regi hajojat. Kap erte 800_-ot.
+  value: 800
+- act: tx
+  cond: false
+  cp: bank
+  Nr: 4
+  txt: Ki kell javitania a hajojat. Fizessen 200_-ot.
+  value: -100
+- act: tx
+  cond: false
+  cp: bank
+  Nr: 5
+  txt: Megszegte a kikototorvenyeket. Buntetesul fizet 100_-t.
+  value: -100
+- act: re
+  cond: true
+  cp: false
+  Nr: 6
+  txt: Ha van arubiztositasa, meg egyszer dobhat.
+  value: 1
+- act: miss
+  cond: false
+  cp: false
+  Nr: 7
+  txt: Vitorlajavitas miatt meg kell allnia. Ket dobasig kimarad.
+  value: 2
+- act: loss_cargo
+  cond: false
+  cp: false
+  Nr: 8
+  txt: Tonkremegy az egesz rakomany.
+  value: null
+- act: miss
+  cond: false
+  cp: false
+  Nr: 9
+  txt: Letort a kisarboc. Kicserelesig 2 dobasig kimarad
+  value: 2
+- act: tx
+  cond: false
+  cp: bank
+  Nr: 10
+  txt: Varatlan orokseg eri. 5000_-ot kap a banktol.
+  value: 5000
+- act: tx
+  cond: false
+  cp: bank
+  Nr: 11
+  txt: 'A bank ertesiti: szamlajara 200_-ot befizettek.'
+  value: 200
+- act: tx
+  cond: false
+  cp: bank
+  Nr: 12
+  txt: Fizessen 200_ vamot.
+  value: -200
+- act: tx
+  cond: false
+  cp: bank
+  Nr: 13
+  txt: 'A bank ertesiti: atutaltak az On szamlajra uzletfelei 2000_-ot.'
+  value: 2000
+- act: re
+  cond: true
+  cp: false
+  Nr: 14
+  txt: Ha van arubiztositasa, meg egyszer dobhat.
+  value: 1
+- act: tx
+  cond: false
+  cp: bank
+  Nr: 15
+  txt: 'A bank ertesiti: hitelezoi fizetesmeghagyasara 100_-ot fizetnie kell.'
+  value: -100
+- act: move
+  cond: false
+  cp: false
+  Nr: 16
+  txt: Jo szelet kapnak, menetiranyba haladjon elore 10 kockat.
+  value: 10
+- act: tx
+  cond: false
+  cp: bank
+  Nr: 17
+  txt: Surgosen be kell fizetnie adohatralekat, 500_-ot.
+  value: -500
+- act: forw-miss
+  cond: false
+  cp: false
+  Nr: 18
+  txt: Vonuljon be a menetiranya szerinti legkozelebbi kikotobe dokkjavitasra. 2 dobasig
+    kimarad a jatekbol
+  value: 2
+- act: tx
+  cond: true
+  cp: bank
+  Nr: 19
+  txt: Ha van arubiztositasa, a biztosito 150_ visszafizetest fizet.
+  value: 1500
+- act: tx
+  cond: false
+  cp: bank
+  Nr: 20
+  txt: Csaladjanak atutal 500_-t. Fizesse ezt be a bankba.
+  value: -500
+- act: miss
+  cond: false
+  cp: false
+  Nr: 21
+  txt: Szelcsendes ido. 3 dobasig kimarad a jatekbol.
+  value: 3
+- act: keep-tx
+  cond: true
+  cp: bank
+  Nr: 22
+  txt: Ha Londondonba er, e kartya elleneben a bank 1000_-t fizet onnek.
+  value: 1000
+- act: tx
+  cond: false
+  cp: bank
+  Nr: 23
+  txt: Megnyerte peret. Adosai 1000_-ot fizetnek.
+  value: 1000
+- act: miss
+  cond: false
+  cp: false
+  Nr: 24
+  txt: A legenyseg jarvanygyanus, karantenban marad 3 dobasig.
+  value: 3
+- act: back
+  cond: false
+  cp: false
+  Nr: 25
+  txt: Utiokmanyait a legutolsonak erintett kikotoben felejtette. Haladektalanul terjen
+    vissza oda.
+  value: null
+- act: keep-tx
+  cond: true
+  cp: bank
+  Nr: 26
+  txt: Ha Hongkonggkongba er, e kartya elleneben a bank 1000_-t fizet onnek.
+  value: 1000
+- act: miss
+  cond: false
+  cp: false
+  Nr: 27
+  txt: A hajo viharba kerult. El kell ternie a menetiranytol, 2 dobasig kimarad.
+  value: 2
+- act: forw
+  cond: false
+  cp: false
+  Nr: 28
+  txt: Utat rovidithet, menjen azonnal a menetiranya szerinti legkozelebbi kikotobe.
+  value: null
+- act: tx
+  cond: false
+  cp: bank
+  Nr: 29
+  txt: A revkalauznak fizet 20_-ot
+  value: -20
+- act: tx
+  cond: false
+  cp: bank
+  Nr: 30
+  txt: Fizessen 100_ kuLondonbiztositast.
+  value: -100
+- act: tx
+  cond: false
+  cp: bank
+  Nr: 31
+  txt: 2000_ hosszu lejaratu hitelt kap.
+  value: 2000
+- act: tx
+  cond: false
+  cp: bank
+  Nr: 32
+  txt: 'Gratulalunk: Nyert 300_-ot.'
+  value: 300
+- act: tx
+  cond: false
+  cp: bank
+  Nr: 33
+  txt: Raktart epit. A koltseg 150_.
+  value: -150
+- act: tx
+  cond: false
+  cp: bank
+  Nr: 34
+  txt: Fizesse be evi adojat 200_-ot.
+  value: -200
+- act: tx
+  cond: false
+  cp: bank
+  Nr: 35
+  txt: 'Megvalasztottak a Hajotarsasag elnokenek. Tiszteletdija: 100_.'
+  value: 100
+- act: tx
+  cond: false
+  cp: bank
+  Nr: 36
+  txt: Fizessen be hiteltorlesztesre 200_-ot
+  value: -200
+- act: tx
+  cond: false
+  cp: bank
+  Nr: 37
+  txt: Fizessen 100_ kuLondonbiztositast.
+  value: -100
+- act: loss_cargo
+  cond: false
+  cp: false
+  Nr: 38
+  txt: Tuz ut ki a hajon, leeg a rakomany.
+  value: null
+- act: tx
+  cond: false
+  cp: bank
+  Nr: 39
+  txt: Bankszamlajara 400_ folyt be.
+  value: 400
+- act: loss_cargo
+  cond: false
+  cp: false
+  Nr: 40
+  txt: Tuz ut ki a hajon. Leeg a rakomany.
+  value: null
+- act: loss_cargo
+  cond: false
+  cp: false
+  Nr: 41
+  txt: Tonkremeny az egyesz rakomany.
+  value: null
+- act: loss_cargo
+  cond: false
+  cp: false
+  Nr: 42
+  txt: Tonkremeny az egyesz rakomany.
+  value: null
+- act: loss_cargo
+  cond: false
+  cp: false
+  Nr: 43
+  txt: Tuz ut ki a hajon, leeg a rakomany.
+  value: null
+- act: tx
+  cond: false
+  cp: bank
+  Nr: 44
+  txt: Atfesti hajojat. Kiadasa 50_.
+  value: -50
