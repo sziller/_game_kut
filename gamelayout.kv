@@ -1,0 +1,59 @@
+<WindowManager>:
+    ScreenBoard:
+    ScreenProperties:
+
+
+<ScreenBoard>:
+    name: "board"
+    GridLayout:
+        cols: 2
+        Image:
+            source: "./images/Tiger_01WP.jpg"
+        GridLayout:
+            cols: 1
+            Label:
+                text: "1"
+            Label:
+                text: "2"
+            Label:
+                text: "3"
+            Label:
+                text: "4"
+            GridLayout:
+                cols: 2
+                Button:
+                    text: "<"
+                Button:
+                    text: ">"
+            Button:
+                text: "Properties"
+                on_release:
+                    app.root.current = "properties"
+                    root.manager.transition.direction = "down"
+
+<ScreenProperties>:
+    name: "properties"
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols: 2
+            Label:
+                text: "ships"
+            TextInput:
+            Label:
+                text: "cargo"
+            TextInput:
+            Label:
+                text: "insurance"
+            TextInput:
+            Label:
+                text: "money"
+            TextInput:
+            Label:
+                text: "cards"
+            TextInput:
+        Button:
+            text: "Board"
+            on_release:
+                app.root.current = "board"
+                root.manager.transition.direction = "up"
