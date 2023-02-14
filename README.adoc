@@ -35,3 +35,8 @@ Once development reaches multiplayer level, we'll probably convert it into a bro
 
 == Owner
 Sziller
+
+
+=== contact
+
+- szillerke@gmail.com
