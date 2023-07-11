@@ -11,7 +11,7 @@ Gameboard is a collaection of Nodes (Ports) and of edge- or rangebased field-str
 arbitrary combination of the (Ports).
 
 Each player has his/her own session every turn, consisting of:
-- LOOP moving all of players ships (those allowed to move in actual turn):
+- LOOP moving all of player's ships (those allowed to move in actual turn):
     - events
     - stacking cards
     - arriving ships reward
@@ -24,7 +24,7 @@ Each player has his/her own session every turn, consisting of:
     - buy cargo
     - buy insurance
 
-PLAYPERs own SHIPs: Ship object are either children of the bank or of a Player, once bought.
+PLAYERs own SHIPs: Ship object are either children of the bank or of a Player, once bought.
 SHIPs may have certain number of CARGOs: Cargos are children of ShIPS.
 to be continued...
 """
