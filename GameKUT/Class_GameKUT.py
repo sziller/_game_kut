@@ -513,7 +513,7 @@ class Player:
 
 class Cargo:
     def __init__(self, good, buy_price, sell_price, buyback_price, source, destination, insurance, mass, hypo, nr):
-        self.good = good    #
+        self.good = good
         self.buy_price = buy_price
         self.sell_price = sell_price
         self.hypo = hypo
@@ -525,19 +525,10 @@ class Cargo:
         self.nr = nr
 
     @classmethod
-    def from_hun_dict(cls, dictionary):
-        good, buy_price, sell_price, buyback_price, source, destination, insurance, mass, hypo, nr =\
-            dictionary["Rakomany"], \
-            dictionary["AtveteliAr"], \
-            dictionary["LeszallitasiAr"], \
-            dictionary["Visszavaltas"], \
-            dictionary["Berakodas"], \
-            dictionary["Celkikoto"], \
-            dictionary["Biztositas"], \
-            dictionary["RakodasiSuly"], \
-            dictionary["Zalogertek"], \
-            dictionary["Nr"]
-        return cls(good, buy_price, sell_price, buyback_price, source, destination, insurance, mass, hypo, nr)
+    def from_hun_dict(cls, d_in):
+        return cls(
+            d_in["Rakomany"], d_in["AtveteliAr"], d_in["LeszallitasiAr"], d_in["Visszavaltas"], d_in["Berakodas"],
+            d_in["Celkikoto"], d_in["Biztositas"], d_in["RakodasiSuly"], d_in["Zalogertek"], d_in["Nr"])
 
     def return_cargoinfo(self):
         to_return = "| {:>16} - {:<16} | {:>13} | {:>5} | {:>5} | {:>5} | {:>5} | {:>5} | {:>5}|" \
